@@ -2,53 +2,44 @@
 
 This repository contains reusable Agent Skills for desktop application development.
 
-## Structure
+## Repository boundary
 
-Public skills must live under:
+Public skills live under:
 
 ```text
 skills/<skill-name>/
 ```
 
-A skill may contain:
+Beyond that placement rule, this repository does **not** define a fixed internal layout for individual skills.
 
-```text
-skills/<skill-name>/
-├── SKILL.md
-├── references/   # optional detailed guidance
-├── scripts/      # optional deterministic helpers
-└── assets/       # optional templates or static resources
-```
+When creating or restructuring a skill:
+
+- use the appropriate skill-creator capability or the current specification for the target skill ecosystem;
+- let that creator/specification decide which files and subdirectories the skill needs;
+- do not pre-create optional directories just to match a repository template;
+- do not reject a valid skill structure merely because it differs from other skills in this repository.
+
+`SKILL.md` is the skill entry point used for discovery. Any additional structure belongs to the skill itself and may evolve with the relevant tooling and specification.
 
 ## Skill boundaries
 
-- Each skill must be independently understandable and installable.
-- Do not create runtime dependencies from a skill to repository-level `docs/` files.
-- Keep references, scripts, and assets required by a skill inside that skill directory.
-- Avoid shared runtime files between skills unless a concrete need proves that duplication is worse than coupling.
 - Prefer complete reusable capabilities over small component-level micro-skills.
-- Do not tie generic skills to a single agent, framework, language, or product unless the skill is explicitly technology-specific.
+- Avoid unnecessary coupling between unrelated skills.
+- Do not tie a generic skill to a single agent, framework, language, or product unless that specialization is intentional.
+- Repository-level `docs/` describes Desktop Foundry itself; it must not become an accidental substitute for content that a particular skill creator expects to package with that skill.
 
-## Naming
+## Authoring policy
 
-- Skill directory names use lowercase kebab-case.
-- The `name` in `SKILL.md` frontmatter must match the skill directory name.
-- Names should describe a capability, not an implementation detail.
-
-## Authoring
-
-- Keep `SKILL.md` focused on trigger conditions, workflow, decisions, and completion criteria.
-- Put detailed knowledge, checklists, examples, and background material in `references/` when needed.
-- Use `scripts/` only when deterministic automation provides clear value.
-- Use `assets/` for reusable templates or static files, not general documentation.
-- Avoid placeholder behavior in a published skill.
-- Define observable completion gates for workflows that produce or modify artifacts.
+- Do not duplicate evolving skill-authoring rules in this repository when they are already owned by a dedicated skill-creator or specification.
+- Treat the selected skill-creator as authoritative for the internal anatomy of a skill.
+- Keep repository-level rules focused on repository organization, contribution boundaries, and compatibility goals.
+- Avoid placeholder behavior in published skills.
 
 ## Repository-level files
 
-- `docs/` documents this repository itself; it is not part of an installed skill's runtime contract.
-- Do not add top-level directories preemptively. Add them only when they have a real use case.
-- Do not add agent-specific mirrors such as `.claude/skills/` or `.agents/skills/` to this source repository unless there is a demonstrated compatibility requirement.
+- `docs/` documents this repository itself.
+- Do not add top-level directories preemptively. Add them only when they have a real repository-wide use case.
+- Do not add agent-specific mirrors such as `.claude/skills/` or `.agents/skills/` unless a demonstrated compatibility requirement calls for them.
 
 ## Current state
 
