@@ -1,6 +1,6 @@
 # Repository Layout
 
-This document defines the repository-level structure for Desktop Foundry before individual skills are introduced.
+This document defines only the repository-level structure for Desktop Foundry before individual skills are introduced.
 
 ## Current layout
 
@@ -19,34 +19,32 @@ desktop-foundry/
 
 ### `skills/`
 
-The only source directory for public installable skills.
+The source directory for public installable skills.
 
-Future skills should use:
+A future skill is placed under:
 
 ```text
 skills/<skill-name>/
-├── SKILL.md
-├── references/   # optional
-├── scripts/      # optional
-└── assets/       # optional
 ```
 
-A skill should carry everything it needs at runtime inside its own directory so that installation remains portable.
+Its internal structure is intentionally **not** defined here. Skill anatomy belongs to the skill-creator capability or current specification used when that skill is authored.
+
+This repository should not freeze optional directories, metadata files, templates, assets, scripts, references, or agent-specific files into a universal layout. Different skills may legitimately require different structures.
 
 ### `docs/`
 
 Repository-level documentation only: architecture decisions, contribution rules, maintenance notes, and other material about Desktop Foundry itself.
 
-Files here should not be required by an installed skill at runtime.
+Do not use this directory to predefine the internal anatomy of individual skills.
 
 ## Deliberately omitted for now
 
-The following directories are not created until a real use case exists:
+The following repository-level directories are not created until a real repository-wide use case exists:
 
-- `scripts/` — repository-wide maintenance or validation scripts;
-- `examples/` — end-to-end examples that are useful across skills;
-- `templates/` — repository-wide authoring templates;
-- `.github/workflows/` — CI validation after there is content to validate;
-- shared `references/` or `assets/` — avoided to keep skills independently portable.
+- `scripts/` — repository maintenance or validation scripts;
+- `examples/` — cross-skill examples;
+- `templates/` — repository-wide templates;
+- `.github/workflows/` — CI after there is content worth validating;
+- shared resource directories — only if a concrete cross-skill need justifies them.
 
-This keeps the repository small while preserving a clean path for growth.
+The goal is to keep Desktop Foundry's repository contract small and leave skill-specific structure to the tooling designed to create each skill.
