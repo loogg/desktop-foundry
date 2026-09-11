@@ -6,15 +6,17 @@ Desktop Foundry is a collection of reusable Agent Skills for desktop application
 
 Do not add a skill until its responsibility and boundary are clear.
 
-When a new skill is justified, create:
+Public skills belong under:
 
 ```text
 skills/<skill-name>/
-├── SKILL.md
-├── references/   # optional
-├── scripts/      # optional
-└── assets/       # optional
 ```
+
+This repository intentionally does not prescribe the rest of a skill's file structure.
+
+When creating a new skill, use the appropriate skill-creator capability or the current specification for the target ecosystem. The creator/specification should decide what additional files or directories are needed for that skill.
+
+Do not create placeholder directories merely for consistency with another skill.
 
 ## Requirements
 
@@ -22,18 +24,12 @@ A contributed skill should:
 
 - solve one coherent, reusable task;
 - have clear activation conditions;
-- be self-contained inside its own directory;
-- avoid unnecessary coupling to other skills;
-- separate core workflow from detailed reference material;
-- define completion criteria when the task has a verifiable end state;
+- avoid unnecessary coupling to unrelated skills;
 - avoid placeholders in published workflows;
-- remain agent-neutral unless agent-specific behavior is intentional.
+- remain agent-neutral unless agent-specific behavior is intentional;
+- follow the current rules of the skill-creator or specification used to author it.
 
-## Naming
-
-- Use lowercase kebab-case for skill directory names.
-- Keep the frontmatter `name` identical to the directory name.
-- Prefer capability-oriented names.
+Repository-level contribution rules should not duplicate or freeze details that belong to evolving skill-authoring tooling.
 
 ## Validation
 
@@ -43,7 +39,7 @@ After at least one skill exists, repository-level validation should include disc
 npx skills add loogg/desktop-foundry --list
 ```
 
-Validation scripts and CI should be added only when there is real content to validate.
+Additional validation should follow the creator/specification used by each skill. Repository-wide validation scripts and CI should be added only when there is real content to validate.
 
 ## Repository changes
 
