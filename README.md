@@ -23,10 +23,12 @@ desktop-foundry/
     └── repository-layout.md
 ```
 
-- `skills/` — installable Agent Skills. Each future skill will live in its own directory.
-- `docs/` — repository-level documentation and design decisions. It is not a runtime dependency for installed skills.
+- `skills/` — source directory for installable Agent Skills. Each future skill lives in its own directory.
+- `docs/` — repository-level documentation and design decisions.
 - `AGENTS.md` — repository rules for agents and contributors working on this repository.
-- `CONTRIBUTING.md` — conventions for adding or changing skills.
+- `CONTRIBUTING.md` — repository-level contribution guidance.
+
+Desktop Foundry intentionally does not prescribe a universal internal file structure for individual skills. When a skill is created, its structure should follow the appropriate skill-creator capability or the current specification for that target ecosystem.
 
 ## Future installation
 
@@ -34,16 +36,6 @@ Once skills are published, the repository can be used with the Skills CLI:
 
 ```bash
 npx skills add loogg/desktop-foundry
-```
-
-Individual skills will follow this shape:
-
-```text
-skills/<skill-name>/
-├── SKILL.md
-├── references/   # optional
-├── scripts/      # optional
-└── assets/       # optional
 ```
 
 ## Status
