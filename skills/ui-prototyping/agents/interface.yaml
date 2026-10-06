@@ -1,0 +1,13 @@
+# 通用接口元数据；interface 字段与 openai.yaml 保持一致。
+interface:
+  display_name: "UI 原型设计"
+  short_description: "组织 UI 原型的 Page、产品画面、组件示意与各类设计标注"
+  default_prompt: "使用 $ui-prototyping，配合所选设计工具，根据需求制作或完善 UI 原型，并按 Skill 的约定组织界面、状态和说明。"
+compatibility:
+  canonical_format: "agent-skills"
+  # 以下为适配目标声明；本包目前仅有 OpenAI 环境的实际使用证据。
+  adapter_targets:
+    - "openai"
+    - "claude"
+    - "generic"
+    - "agent-skills-compatible"
