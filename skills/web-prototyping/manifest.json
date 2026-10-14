@@ -1,0 +1,12 @@
+{
+  "name": "web-prototyping",
+  "version": "0.1.0",
+  "owner": "loogg",
+  "updated_at": "2026-10-14",
+  "status": "active",
+  "maturity_tier": "scaffold",
+  "release_gates": [
+    "validate_skill",
+    "trigger_eval"
+  ]
+}

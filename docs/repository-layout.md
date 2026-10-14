@@ -7,11 +7,11 @@ This document defines only the repository-level structure for Desktop Foundry.
 ```text
 desktop-foundry/
 ├── README.md
-├── AGENTS.md
 ├── CONTRIBUTING.md
 ├── skills/
 │   ├── gui-development/
-│   └── design-prototyping/
+│   ├── design-prototyping/
+│   └── web-prototyping/
 └── docs/
     └── repository-layout.md
 ```

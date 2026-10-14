@@ -1,0 +1,4 @@
+interface:
+  display_name: "Web 交互原型"
+  short_description: "指导 Web 原型的设计规范、界面与交互表达及效果检查"
+  default_prompt: "使用 $web-prototyping，配合所选工具，根据需求和提供的资料制作、完善或验收 Web 交互原型，明确设计规范，表达界面与关键交互，并检查本次范围内的实际效果。"

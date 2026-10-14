@@ -80,35 +80,23 @@ UI 原型（选填）：[Figma 文件/节点、在线原型、原型代码或截
 
 这些是本次调用参数。项目的固定启动命令、支持尺寸、协议路径和安全范围仍以项目事实为准。
 
-## 架构参考与扩展
+## 架构参考
 
 [参考索引](references/architecture-and-review.md) 按实际 UI 和后端边界路由。Web 技术桌面参考包含 Electron + Node 服务、Electron + 外部 Worker、Tauri + Rust 服务三个例子；同样使用 C# 的 Worker 后端和原生 C# GUI 要分别判断。
-
-新增经验时，在 `references/` 写明适用条件、技术栈与架构示例、经验约束、启动核对及审查路径，再补索引入口。协议细节、固定端口和控件实现继续留在目标项目。
 
 可用于目标项目 `AGENTS.md` 的一行入口：
 
 > GUI 开发、修改与修复使用 `gui-development`，按实际架构选择参考，完成任务验收与界面审查后交付。
 
-## 使用与验证
+## 使用方式
 
-当前可直接让 Agent 读取本目录的 `SKILL.md`；识别到已安装 Skill 的环境可用 `$gui-development`。在仓库根目录检查本地发现：
+可直接让 Agent 读取本目录的 `SKILL.md`；已安装 Skill 时使用 `$gui-development`。找不到 Skill 时可显式提供文件路径。
 
-```bash
-npx skills add . --list
-```
-
-`--list` 仅列出技能。发现不到时可显式提供文件路径。本 Skill 用于 GUI 开发流程；纯后端、命令行、UI 原型制作及普通网页操作按各自专业任务处理。
+本 Skill 用于 GUI 开发流程；纯后端、命令行、UI 原型制作及普通网页操作按各自专业任务处理。
 
 ## Troubleshooting
 
 - 找不到匹配参考：确认实际 UI 框架和运行载体，采用项目约束与公共流程；参考示例不限定可用技术栈。
 - 浏览器可操作但后端未连接：检查所选适配器和真实调用链，区分 Fixture、真实 Bridge 与原生运行；审查入口能打开不等于业务链路通过。
 - 审查工具不可用：采用可用且适合真实应用的工具；缺少实际操作或视觉证据的部分列为未验证。
-
-有 qiaomu-meta-skill 时可用其 `scripts/validate_skill.py` 检查本目录，无需复制创作工具或其脚本到本包。
-
-## 参考来源
-
-参考：[Anthropic webapp-testing](https://github.com/anthropics/skills/tree/main/skills/webapp-testing)、[Superpowers verification-before-completion](https://github.com/obra/superpowers/tree/main/skills/verification-before-completion)。
 
