@@ -1,9 +1,9 @@
 ---
-name: ui-prototyping
-description: 在 UI 原型制作、修改或验收中，指导 Page 划分、界面与状态组织、复杂组件示意和标注位置。
+name: design-prototyping
+description: 在设计画布类平台的 UI 原型制作、修改或验收中，指导 Page 划分、界面与状态组织、复杂组件示意和标注位置。不用于以 Web 代码交付的可运行原型或正式 GUI 开发。
 ---
 
-# UI 原型设计
+# 设计画布原型
 
 用户要求和已有项目约定优先。下文以 Figma 术语描述，其他平台按设计意图采用对应能力。
 

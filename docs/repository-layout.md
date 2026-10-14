@@ -11,7 +11,7 @@ desktop-foundry/
 ├── CONTRIBUTING.md
 ├── skills/
 │   ├── gui-development/
-│   └── ui-prototyping/
+│   └── design-prototyping/
 └── docs/
     └── repository-layout.md
 ```

@@ -19,7 +19,7 @@ desktop-foundry/
 ├── CONTRIBUTING.md
 ├── skills/
 │   ├── gui-development/
-│   └── ui-prototyping/
+│   └── design-prototyping/
 └── docs/
     └── repository-layout.md
 ```
@@ -44,6 +44,6 @@ npx skills add loogg/desktop-foundry
 | Skill | Purpose |
 |---|---|
 | [gui-development](skills/gui-development/README.md) | GUI implementation workflow with project-aware architecture references, task acceptance, real interaction, visual review and repair/retest. Covers Web and desktop GUI increments. |
-| [ui-prototyping](skills/ui-prototyping/README.md) | Organize UI prototypes, component examples and design annotations. |
+| [design-prototyping](skills/design-prototyping/README.md) | Organize UI prototypes, component examples and design annotations. |
 
 To inspect local discovery without installing, run `npx skills add . --list` from this repository. See each skill's README for usage and validation limits.

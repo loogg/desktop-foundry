@@ -1,4 +1,4 @@
-# UI 原型设计（ui-prototyping）
+# 设计画布原型（design-prototyping）
 
 帮助 Agent 组织和表达 UI 设计成果：按内容划分 Page、呈现产品画面、表达复杂组件，以及在需要的对象旁标注说明。配合所选平台和设计插件使用。
 
@@ -8,14 +8,14 @@
 
 ## 在 Figma 中使用
 
-基础搭配为 **ui-prototyping + Figma + design-system-ops**。发送前选中 Skill 并附上对应插件，替换模板中的方括号；选填行可以删除。
+基础搭配为 **design-prototyping + Figma + design-system-ops**。发送前选中 Skill 并附上对应插件，替换模板中的方括号；选填行可以删除。
 
 需要额外设计支持时，再附上 **Taste** 或 **Impeccable**，并将模板首句中的“Figma 和 design-system-ops”替换为“Figma、design-system-ops 和 Taste”或“Figma、design-system-ops 和 Impeccable”。插件中的能力按本次任务选用。
 
 ### 从需求制作
 
 ```text
-使用 $ui-prototyping，配合 Figma 和 design-system-ops 插件，根据以下需求制作用于后续开发的 Figma UI 原型。
+使用 $design-prototyping，配合 Figma 和 design-system-ops 插件，根据以下需求制作用于后续开发的 Figma UI 原型。
 
 需求：[需求描述或文档]
 目标位置：[Figma 文件或文件夹链接]
@@ -33,7 +33,7 @@
 ### 完善已有设计
 
 ```text
-使用 $ui-prototyping，配合 Figma 和 design-system-ops 插件，完善以下 Figma UI 原型。
+使用 $design-prototyping，配合 Figma 和 design-system-ops 插件，完善以下 Figma UI 原型。
 
 现有设计：[文件或节点链接]
 本次改动：[需求或问题]
@@ -49,7 +49,7 @@
 ### 多轮修改后的整体验收
 
 ```text
-使用 $ui-prototyping，配合 Figma 和 design-system-ops 插件，以资深 UI 设计师的角色，对以下原型进行整体内容与视觉验收，并修正发现的问题。
+使用 $design-prototyping，配合 Figma 和 design-system-ops 插件，以资深 UI 设计师的角色，对以下原型进行整体内容与视觉验收，并修正发现的问题。
 
 现有设计：[文件或节点链接]
 验收依据：[当前需求、已确定的设计方向或相关文档]
@@ -69,7 +69,7 @@
 将所用平台的插件或工具附到消息中，填入实际名称，并选择任务类型。新建默认闭环，修改默认局部检查，验收按指定范围闭环。
 
 ```text
-使用 $ui-prototyping，配合 [平台的插件或工具名称]，在 [平台名称] 中完成以下 UI 原型任务。
+使用 $design-prototyping，配合 [平台的插件或工具名称]，在 [平台名称] 中完成以下 UI 原型任务。
 
 任务类型：[新建 / 修改 / 验收，选择一项]
 需求或验收依据：[需求、改动描述或相关文档]

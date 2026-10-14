@@ -1,0 +1,4 @@
+interface:
+  display_name: "设计画布原型"
+  short_description: "组织设计画布中的 UI 原型的 Page、产品画面、组件示意与各类设计标注"
+  default_prompt: "使用 $design-prototyping，配合所选设计工具，制作、完善或验收 UI 原型，并按 Skill 的约定组织界面、状态和说明。"
