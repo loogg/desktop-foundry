@@ -43,4 +43,4 @@ When creating or restructuring a skill:
 
 ## Current state
 
-The repository structure is initialized, but no skill is implemented yet. Do not create a `SKILL.md` unless the task explicitly requires implementing a skill.
+Implemented skill sources live under `skills/`; see the repository README for current entries. Do not create a `SKILL.md` unless the task explicitly requires implementing a skill.

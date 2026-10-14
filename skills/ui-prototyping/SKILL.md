@@ -1,6 +1,6 @@
 ---
 name: ui-prototyping
-description: 在制作、修改或整理 UI 原型时，指导 Page 划分、界面与状态组织、复杂组件示意和标注位置。
+description: 在 UI 原型制作、修改或验收中，指导 Page 划分、界面与状态组织、复杂组件示意和标注位置。
 ---
 
 # UI 原型设计

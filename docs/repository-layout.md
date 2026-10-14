@@ -1,6 +1,6 @@
 # Repository Layout
 
-This document defines only the repository-level structure for Desktop Foundry before individual skills are introduced.
+This document defines only the repository-level structure for Desktop Foundry.
 
 ## Current layout
 
@@ -10,7 +10,8 @@ desktop-foundry/
 ├── AGENTS.md
 ├── CONTRIBUTING.md
 ├── skills/
-│   └── .gitkeep
+│   ├── gui-development/
+│   └── ui-prototyping/
 └── docs/
     └── repository-layout.md
 ```
@@ -21,7 +22,7 @@ desktop-foundry/
 
 The source directory for public installable skills.
 
-A future skill is placed under:
+A skill is placed under:
 
 ```text
 skills/<skill-name>/

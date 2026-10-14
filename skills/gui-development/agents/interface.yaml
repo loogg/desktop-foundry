@@ -1,0 +1,9 @@
+# 通用接口元数据；interface 与 openai.yaml 保持一致。
+interface:
+  display_name: "GUI 开发工作流"
+  short_description: "按需求范围闭环开发 GUI，完成实际界面与核心流程验收"
+  default_prompt: "使用 $gui-development，按本次需求、项目约定与指定执行方式完成 GUI 开发任务。"
+compatibility:
+  canonical_format: "agent-skills"
+  # 适配目标声明，不代表已在所有宿主或模型上验证。
+  adapter_targets: ["openai", "claude", "generic", "agent-skills-compatible"]

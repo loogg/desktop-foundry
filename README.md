@@ -2,7 +2,7 @@
 
 Reusable agent workflows and skills for designing, building, reviewing, and testing desktop applications.
 
-> Repository structure is initialized. No public skills are implemented yet.
+Local skill sources are available under `skills/`. Local availability does not imply a published or installed release.
 
 ## Scope
 
@@ -18,12 +18,13 @@ desktop-foundry/
 ├── AGENTS.md
 ├── CONTRIBUTING.md
 ├── skills/
-│   └── .gitkeep
+│   ├── gui-development/
+│   └── ui-prototyping/
 └── docs/
     └── repository-layout.md
 ```
 
-- `skills/` — source directory for installable Agent Skills. Each future skill lives in its own directory.
+- `skills/` — source directory for installable Agent Skills. Each skill lives in its own directory.
 - `docs/` — repository-level documentation and design decisions.
 - `AGENTS.md` — repository rules for agents and contributors working on this repository.
 - `CONTRIBUTING.md` — repository-level contribution guidance.
@@ -38,6 +39,11 @@ Once skills are published, the repository can be used with the Skills CLI:
 npx skills add loogg/desktop-foundry
 ```
 
-## Status
+## Available local skills
 
-The repository currently contains infrastructure only. No skill is available yet.
+| Skill | Purpose |
+|---|---|
+| [gui-development](skills/gui-development/README.md) | GUI implementation workflow with project-aware architecture references, task acceptance, real interaction, visual review and repair/retest. Covers Web and desktop GUI increments. |
+| [ui-prototyping](skills/ui-prototyping/README.md) | Organize UI prototypes, component examples and design annotations. |
+
+To inspect local discovery without installing, run `npx skills add . --list` from this repository. See each skill's README for usage and validation limits.
