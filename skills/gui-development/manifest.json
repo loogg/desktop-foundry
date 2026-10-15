@@ -1,8 +1,8 @@
 {
   "name": "gui-development",
-  "version": "0.3.0",
+  "version": "0.4.1",
   "owner": "loogg",
-  "updated_at": "2026-10-14",
+  "updated_at": "2026-10-15",
   "status": "experimental",
   "maturity_tier": "scaffold",
   "release_gates": ["validate_skill", "reference_review", "scenario_review"]

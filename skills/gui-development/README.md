@@ -2,7 +2,7 @@
 
 按约定需求范围完成 GUI 产品开发或修改：以功能增量推进实现和验证，完成需求覆盖核对、实际界面审查与最终集成验收后交付。
 
-版本 `0.3.0`，作者 `loogg`。[SKILL.md](SKILL.md) 规定公共流程；本页提供调用模板；[参考索引](references/architecture-and-review.md) 提供技术栈、架构示例与对应审查方式。
+版本 `0.4.1`，作者 `loogg`。[SKILL.md](SKILL.md) 规定公共流程；本页提供调用模板；[参考索引](references/architecture-and-review.md) 提供技术栈、架构示例与对应审查方式。
 
 ## 提示词模板
 
@@ -79,6 +79,10 @@ UI 原型（选填）：[Figma 文件/节点、在线原型、原型代码或截
 > 审查优先使用 [工具]；结果记录在 [位置或形式]；Agent 协作采用 [方式]。
 
 这些是本次调用参数。项目的固定启动命令、支持尺寸、协议路径和安全范围仍以项目事实为准。
+
+## 分析与方案参考
+
+需求分析按清晰程度选择 [主题探索](references/discovery/topic-discovery.md) 或 [定向补全](references/discovery/gap-completion.md)，明确部分直接沿用。[工程方案与图示](references/planning-and-diagrams.md) 提供实现条件分析、架构与逻辑的 ASCII 图示、方案自查方法，深度随任务规模与不确定性调整。
 
 ## 架构参考
 
