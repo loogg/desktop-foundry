@@ -1,8 +1,8 @@
 {
   "name": "web-prototyping",
-  "version": "0.1.0",
+  "version": "0.2.5",
   "owner": "loogg",
-  "updated_at": "2026-10-14",
+  "updated_at": "2026-10-15",
   "status": "active",
   "maturity_tier": "scaffold",
   "release_gates": [

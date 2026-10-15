@@ -2,7 +2,7 @@
 
 按约定需求范围制作、完善或验收设计画布中的 UI 原型，表达产品界面、关键状态与交互意图，供设计评审与后续开发参考。
 
-版本 `0.4.1`，作者 `loogg`。[SKILL.md](SKILL.md) 提供原型组织与表达的指导；本页提供调用模板；[组织与标注示例](references/organization-and-expression.md) 提供具体例子，按需读取，无需复制进提示词。
+版本 `0.4.1`，作者 `loogg`。[SKILL.md](SKILL.md) 提供原型组织与表达的指导；本页提供调用模板；[组织与标注示例](references/organization-and-expression.md) 由 Agent 在制作、修改或验收前读取，具体内容按本次需求和已有设计适配，无需复制进提示词。
 
 ## 提示词模板
 
