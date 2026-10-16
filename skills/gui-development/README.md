@@ -2,7 +2,7 @@
 
 按约定需求范围完成 GUI 产品开发或修改：以功能增量推进实现和验证，完成需求覆盖核对、实际界面审查与最终集成验收后交付。
 
-版本 `0.4.2`，作者 `loogg`。[SKILL.md](SKILL.md) 规定公共流程；本页提供调用模板；[参考索引](references/architecture-and-review.md) 提供技术栈、架构示例与对应审查方式。
+版本 `0.5.0`，作者 `loogg`。[SKILL.md](SKILL.md) 规定公共流程；本页提供调用模板；[参考索引](references/architecture-and-review.md) 提供技术栈、架构示例与对应审查方式。
 
 ## 提示词模板
 
